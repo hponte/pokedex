@@ -2,41 +2,36 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
     <h1>POKEDEX</h1>
 
-    <input
-        type="text"
+    <input type="text"
         id="pokemonInput"
-        placeholder="Digite o nome do pokemon"
-    >
-
+        placeholder="Digite o nome do Pokemon">
+    
     <button onclick="buscarPokemon()">
         Buscar
     </button>
-
+    
     <div id="pokemon">
-
         <h2 id="nome"></h2>
-
         <img id="imagem">
+    </div>
 
+    <div id="pokemonShiny">
+        <h2 id="nomeShiny"></h2>
+        <img id="imagemShiny">
     </div>
 
     <script src="script.js"></script>
+    
 
-</body>
+</body> 
 </html>
