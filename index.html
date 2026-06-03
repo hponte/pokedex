@@ -10,26 +10,24 @@
 
 <body>
 
-    <h1>POKEDEX</h1>
+    <div class="pokedex-container">
 
-    <input type="text"
+        <h1>POKEDEX</h1>
+        <img src="pokedex1.png" id="pokedexLogo">
+        <img id="imagem">
+        <h2 id="nome"></h2>
+        <h2 id="tipo"></h2>
+
+        <input type="text"
         id="pokemonInput"
         placeholder="Digite o nome do Pokemon">
     
     <button onclick="buscarPokemon()">
         Buscar
     </button>
-    
-    <div id="pokemon">
-        <h2 id="nome"></h2>
-        <img id="imagem">
-    </div>
 
-    <div id="pokemonShiny">
-        <h2 id="nomeShiny"></h2>
-        <img id="imagemShiny">
     </div>
-
+         
     <script src="script.js"></script>
     
 

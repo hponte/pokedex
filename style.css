@@ -1,6 +1,6 @@
 body{
     background-color: #1e1e1e;
-    color: rgb(231, 198, 11);
+    color: rgb(255, 255, 255);
 
     font-family: Arial;
 
@@ -9,22 +9,101 @@ body{
     margin-top: 50px;
 }
 
+.pokedex-container{
+    position: relative;
+
+    width: 800px;
+
+    margin: auto;
+}
+
+
+#pokedexLogo{
+    width: 800px;
+}
+
+#imagem{
+    position: absolute;
+
+    top: 228px;
+
+    left: 125px;
+
+    width: 180px;
+}
+
+#nome{
+    position: absolute;
+
+    top: 260px;
+
+    left: 500px;
+}
+
+#tipo{
+    position: absolute;
+
+    top: 300px;
+
+    left: 500px;
+}
+
+
+
 input{
-    padding: 10px;
+    position: absolute;
 
-    border-radius: 5px;
+    top: 500px;
+    left: 45px;
 
-    border: none;
+    width: 195px;
+    height: 35px;
+
+    padding: 0 10px;
+
+    border: 2px solid #555;
+    border-radius: 8px;
+
+    background-color: #f5f5f5;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+input:focus{
+    border-color: #4CAF50;
+
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 }
 
 button{
-    padding: 10px;
+    position: absolute;
 
-    border: none;
+    top: 500px;
+    left: 270px;
 
-    border-radius: 5px;
+    width: 90px;
+    height: 39px;
+
+    border: white solid 2px;
+    border-radius: 8px;
+
+    background-color: #e53935;
+
+    color: white;
+
+    font-weight: bold;
 
     cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+
+button:active{
+    transform: scale(0.98);
 }
 
 img{

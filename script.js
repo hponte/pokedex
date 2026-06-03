@@ -1,31 +1,3 @@
-/*async function buscarPokemon(){
-
-    const pokemon =
-        document.getElementById('pokemonInput').value
-
-    const resposta =
-        await fetch(
-            `https://pokeapi.co/api/v2/pokemon/${pokemon}`
-        )
-
-    const dados =
-        await resposta.json()
-
-    document.getElementById('nome').innerText =
-        dados.name
-        
-
-    document.getElementById('imagem').src =
-        dados.sprites.front_default
-    
-    document.getElementById('imagemShiny').src =
-        dados.sprites.front_shiny
-    
-}   
-
-*/
-
-
 async function buscarPokemon() {
 
     let pokemon =
@@ -41,13 +13,26 @@ async function buscarPokemon() {
     const resposta =
         await fetch(
             `https://pokeapi.co/api/v2/pokemon/${pokemon}`
-        )
+        )    
 
     const dados =
         await resposta.json()
 
-    document.getElementById('nome').innerText =
-        dados.name
+// NOME DO POKEMON
+
+
+    if (shiny) {
+        document.getElementById('nome').innerText =
+        "Nome: Shiny " + dados.name 
+    } else {
+        document.getElementById('nome').innerText =
+            "Nome: " + dados.name
+    }
+        
+    document.getElementById('tipo').innerText =
+        "Tipo: " + dados.types[0].type.name
+
+// FOTO DO POKEMON
 
     if (shiny) {
 
